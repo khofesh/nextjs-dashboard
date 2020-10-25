@@ -11,6 +11,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "classnames": "^2.2.6",
+    "gray-matter": "^4.0.2",
     "next": "9.5.3",
     "next-on-netlify": "^2.5.2",
     "postcss-flexbugs-fixes": "^4.2.1",

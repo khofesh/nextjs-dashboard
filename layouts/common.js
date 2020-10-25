@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 
 export const siteTitle = "Next.js Sample Website";
 
-export default function Layout({ children, title }) {
+export default function Layout({ children, title, transparent }) {
   return (
     <>
       <Head>
@@ -23,7 +23,7 @@ export default function Layout({ children, title }) {
       </Head>
 
       <header>
-        <Navbar transparent />
+        <Navbar transparent={transparent} />
       </header>
 
       <main>{children}</main>

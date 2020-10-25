@@ -4,7 +4,7 @@ import Layout from "../layouts/common";
 
 export default function Home() {
   return (
-    <Layout home title="Pirates Landing Page">
+    <Layout home title="Pirates Landing Page" transparent>
       <div
         className="relative pt-16 pb-32 flex content-center items-center justify-center"
         style={{
