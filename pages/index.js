@@ -1,13 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
-import Layout, { siteTitle } from "../layouts/common";
+import Layout from "../layouts/common";
 
 export default function Home() {
   return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
+    <Layout home title="Pirates Landing Page">
       <div
         className="relative pt-16 pb-32 flex content-center items-center justify-center"
         style={{

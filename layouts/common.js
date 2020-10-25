@@ -3,13 +3,13 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
-const name = "Pirate";
 export const siteTitle = "Next.js Sample Website";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, title }) {
   return (
     <>
       <Head>
+        <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Fundamental analysis club" />
         <meta
@@ -22,16 +22,11 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <Navbar transparent />
+      <header>
+        <Navbar transparent />
+      </header>
 
       <main>{children}</main>
-      {/* {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )} */}
 
       <Footer />
     </>
