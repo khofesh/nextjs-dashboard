@@ -2,6 +2,7 @@ import Link from "next/link";
 import Head from "next/head";
 import Layout from "../../layouts/common";
 import { getPostData, getAllPostIds } from "../../lib/posts";
+import Date from "../../components/date";
 
 export default function FirstPost(props) {
   const { postData } = props;
@@ -32,7 +33,7 @@ export default function FirstPost(props) {
               <br />
               {postData.id}
               <br />
-              {postData.date}
+              <Date dateString={postData.date} />
             </div>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
           </div>
