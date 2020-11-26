@@ -12,6 +12,16 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.error-text {
+  font-size: 130px;
+}
+
+@media (min-width: 768px) {
+  .error-text {
+    font-size: 220px;
+  }
+}
+
 // * {
 //   box-sizing: border-box;
 // }
